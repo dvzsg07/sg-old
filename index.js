@@ -8,10 +8,8 @@ const BotController = require("./BotController");
 const TournamentManager = require("./TournamentManager");
 const TourXManager = require("./TourXManager");
 const { checkMaintenance } = require("./MaintenanceMiddleware");
-const { 
-  validateUsernameMiddleware
-} = require("./AntiCheatMiddleware");
-
+const AntiCheat = require("./AntiCheatMiddleware");
+const { validateUsernameMiddleware } = AntiCheat;
 const {
   BackendUtils,
   UserModel,
